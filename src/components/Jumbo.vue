@@ -19,15 +19,33 @@ export default {
     <div class="nav">
       <!-- <font-awesome-icon icon="fa-solid fa-user-secret" /> -->
       <!-- <a>Contact</a> -->
+      <div>
+        <img src="@/asset/logo2.jpg"/>
+        
+      </div>
+      <div class="tab-1">
+        <div class="form-2">
+          <form action="" method="post">
+            <input type="text" placeholder="What are you looking for ...">
+            <button><font-awesome-icon icon="fa-solid fa fa-search" color="white"/> </button>
+          </form>
+        </div>
+        <div>
+          <a><font-awesome-icon icon="fa-solid fa-shopping-cart" color="white"/></a>
+          <a><font-awesome-icon icon="fa-solid fa-heart" color="white"/></a>
+          <!-- <a>Login</a> -->
+          <a>Register/Login</a>
+          <a>Account</a>
+          <a>Home</a>
+          
+        </div>
+    
+        
+      </div>
      
-      <a><font-awesome-icon icon="fa-solid fa-shopping-cart" color="white"/></a>
-      <a><font-awesome-icon icon="fa-solid fa-heart" color="white"/></a>
-      <a>Login</a>
-      <a>Register</a>
-      <a>Account</a>
-      <a>Home</a>
-      
+     
     </div>
+ 
   </div>
   <div class="hero">
     <h2>Don't Miss</h2>
@@ -38,7 +56,7 @@ export default {
  
   <div class="brands">
     <div><img src="@/assets/yeezy.jpg"/></div>
-    <div><img src="@/assets/yeezy.jpg"/></div>
+    <div><img src="@/assets/gucci.png"/></div>
     <div><img src="@/assets/yeezy.jpg"/></div>
     <div><img src="@/assets/yeezy.jpg"/></div>
     <div><img src="@/assets/yeezy.jpg"/></div>
@@ -48,8 +66,11 @@ export default {
   </div>
 
   <div class="trendy">
+    <div class="big-1">
+      <h2>Champion</h2>
+    </div>
  
-    <img class="big-1" src="@/assets/banner-1.jpg"/>
+    <!-- <img class="big-1" src="@/assets/banner-1.jpg"/> -->
    
     <div class="">
       <div class="mini">
@@ -94,13 +115,13 @@ export default {
     </div>
    
   </div>
-  <div class="vid">
-    <!-- <button class="vid1"></button> -->
+  <!-- <div class="vid">
+    <button class="vid1"></button>
     <div class="container1">
       <h3>Product Demo</h3>
       <a href="" class="vid1"></a>
     </div>
-  </div>
+  </div> -->
   <div class="main1"></div>
   <div class="title1">
     <h3>New Arrivals</h3>
@@ -202,16 +223,21 @@ export default {
   text-align: center;
 }
 .footer{
-  background-color: rgb(250,250,250);
+  background-color:black;
+  color:white;
   padding:80px;
   display: flex;
   flex-direction: row;
   justify-content:space-around;
 }
+.footer h2{
+  font-size:2 rem;
+}
 .footer ul{
   text-align: left;
   margin: 0;
   padding: 0; 
+ 
 }
 .footer ul li{
 
@@ -223,7 +249,7 @@ export default {
 }
 .footer ul li a{
   text-decoration:none;
-  color:black;
+  color:white;
   outline: none;
 
 }
@@ -427,18 +453,30 @@ export default {
  
 }
 .brands img{
-  width:90px;
-  height:90px;
+  width:80px;
+  height:80px;
+  /* background-color: inherit;
+  border: 1px solid maroon;
+  border-radius: 100%;
+  border-spacing: 20px; */
 
 }
+.brands img:hover{
+  width:80px;
+  height:80px;
+  background-color: inherit;
+  border: 1px solid maroon;
+  border-radius: 100%;
+  border-spacing: 20px;
+}
 div .nav a{
-  margin:25px;
+  margin:20px 20px 20px 40px;
   color:white;
   align-items: center;
   font-size:1 rem;
   float:right;
   text-align: center;
-  padding: 8px 13px;
+  /* padding: 8px 13px; */
 }
 .hero{
   text-align: center;
@@ -450,8 +488,8 @@ div .nav a{
   /* border-color: white;
   border-width: 2px;
   border-style: double; */
- 
-  padding:30px;
+/*  
+  padding:30px; */
   
 
 }
@@ -489,10 +527,58 @@ div .nav a{
   border-color: white;
 }
 .big-1{
-  border-style: groove;
-  border:2px;
+  /* border-style: groove;
+  border:2px; */
+  background-image: url('../assets/banner-1.jpg');
 }
 .big-1:hover{}
+.tab-1{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.form-2{
+  margin-right: 150px;
+  display: inline;
+}
+.form-2 form{
+  display: inline;
+}
+.form-2 input{
+  justify-content: center;
+  background-color: inherit;
+  color:white;
+  border: none;
+  border-bottom: 1.5px solid white;
+  outline:none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 20px;
+}
+.form-2 input:focus{
+  border:none;
+  border-bottom: 2px solid white;
+  background-color: inherit;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  outline:none;
+}
+.form-2 button{
+  background-color: inherit;
+  border:none;
+  float: left;
+  position: absolute;
+  top: 2%;
+}
+.form-2 button:hover{
+  background-color: inherit;
+  border:none;
+  float: left;
+  position: absolute;
+  top: 2%;
+  cursor:pointer;
+}
+
 
 
 
