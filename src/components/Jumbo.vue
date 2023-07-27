@@ -20,7 +20,6 @@ export default {
       <!-- <font-awesome-icon icon="fa-solid fa-user-secret" /> -->
       <!-- <a>Contact</a> -->
       <div>
-        <img src="@/asset/logo2.jpg"/>
         
       </div>
       <div class="tab-1">
@@ -67,10 +66,11 @@ export default {
 
   <div class="trendy">
     <div class="big-1">
-      <h2>Champion</h2>
+
+    <img class="big-1" src="@/assets/banner-1.jpg"/>
+     
     </div>
  
-    <!-- <img class="big-1" src="@/assets/banner-1.jpg"/> -->
    
     <div class="">
       <div class="mini">
@@ -336,7 +336,7 @@ export default {
 }
 .title1{
   color:maroon;
-  font-family: 'Times New Roman', Times, serif;
+  font-family:poppins;
   font-weight:bolder;
   text-align: center;
   margin-top:25px;
